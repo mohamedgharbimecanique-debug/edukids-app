@@ -1,5 +1,4 @@
-const CACHE_NAME = 'edukids-v1';
-const urlsToCache = [
+const CACHE_NAME = 'edukids-v8';const urlsToCache = [
   '/edukids-app/',
   '/edukids-app/index.html',
   '/edukids-app/cp.html',

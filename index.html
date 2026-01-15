@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUKIDS 2025</title>
+    <title>EDUKIDS 2.0 - Apprendre en s'amusant</title>
     <link rel="manifest" href="manifest.json">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,6 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
         .container {
             text-align: center;
@@ -23,38 +24,62 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             max-width: 500px;
         }
-        h1 { color: #333; margin-bottom: 30px; font-size: 48px; }
-        p { color: #666; margin-bottom: 40px; font-size: 18px; }
-        .button-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 48px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         .btn {
             padding: 20px 40px;
             font-size: 24px;
             border: none;
             border-radius: 15px;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             text-decoration: none;
             display: inline-block;
-            font-weight: bold;
         }
-        .btn:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-        .btn-cp { background: #FF6B6B; color: white; }
-        .btn-ce1 { background: #4ECDC4; color: white; }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .btn-cp {
+            background: linear-gradient(135deg, #FF6B9D, #FF6B6B);
+            color: white;
+        }
+        .btn-ce1 {
+            background: linear-gradient(135deg, #4ECDC4, #44A08D);
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎓 EDUKIDS</h1>
-        <p>Apprentissage Amusant CP/CE1</p>
-        <p style="font-size:14px; color:#999;">Programmes Officiels 2025</p>
+        <h1>🌟 EDUKIDS 2.0 🌟</h1>
+        <p>Apprendre en s'amusant avec des leçons et des quiz interactifs !</p>
         <div class="button-group">
-            <a href="cp.html" class="btn btn-cp">🐼 CP</a>
-            <a href="ce1.html" class="btn btn-ce1">🦊 CE1</a>
+            <a href="cp.html" class="btn btn-cp">📚 CP</a>
+            <a href="ce1.html" class="btn btn-ce1">📖 CE1</a>
         </div>
     </div>
+
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registered!');
+            });
         }
     </script>
 </body>

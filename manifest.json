@@ -1,0 +1,17 @@
+{
+  "name": "EDUKIDS 2025",
+  "short_name": "EDUKIDS",
+  "description": "Application éducative CP/CE1",
+  "start_url": "/edukids-app/",
+  "scope": "/edukids-app/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='96' y='120' font-size='80' font-weight='bold' fill='white' text-anchor='middle'>📚</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

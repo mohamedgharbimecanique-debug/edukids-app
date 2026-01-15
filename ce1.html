@@ -1,140 +1,152 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CE1 - EDUKIDS 2.0</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Comic Sans MS', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 10px; }
-.header { background: linear-gradient(135deg, #4ECDC4 0%, #44A7A1 100%); color: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-.header h1 { font-size: 32px; margin-bottom: 5px; animation: bounce 1s; }
-.score { background: #FFD93D; color: #333; padding: 10px 20px; border-radius: 25px; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 10px; }
-.menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 20px; }
-.menu-btn { padding: 20px; font-size: 18px; border: none; border-radius: 15px; cursor: pointer; font-weight: bold; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-.menu-btn:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
-.menu-btn:active { transform: scale(0.95); }
-.btn-francais { background: linear-gradient(135deg, #FFD93D 0%, #FFA500 100%); }
-.btn-math { background: linear-gradient(135deg, #6BCB77 0%, #4CAF50 100%); color: white; }
-.btn-anglais { background: linear-gradient(135deg, #4D96FF 0%, #1976D2 100%); color: white; }
-.content { background: white; padding: 20px; border-radius: 15px; min-height: 400px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-.quiz-question { font-size: 24px; margin-bottom: 20px; font-weight: bold; color: #333; text-align: center; padding: 15px; background: #f0f8ff; border-radius: 10px; }
-.quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px; }
-.quiz-option { padding: 20px; background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); border: 3px solid #2196F3; border-radius: 15px; cursor: pointer; font-size: 18px; font-weight: bold; text-align: center; transition: all 0.3s; }
-.quiz-option:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(33,150,243,0.4); }
-.quiz-option.correct { background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%); border-color: #2E7D32; color: white; animation: celebrate 0.5s; }
-.quiz-option.wrong { background: linear-gradient(135deg, #F44336 0%, #EF5350 100%); border-color: #C62828; color: white; animation: shake 0.5s; }
-.back-btn { background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%); color: white; padding: 12px 30px; border: none; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: bold; margin-top: 20px; transition: all 0.3s; }
-.back-btn:hover { transform: scale(1.05); }
-.result { text-align: center; font-size: 28px; font-weight: bold; margin: 30px 0; padding: 20px; border-radius: 15px; }
-.result.excellent { background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%); color: white; }
-.result.good { background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%); color: white; }
-.result.retry { background: linear-gradient(135deg, #2196F3 0%, #64B5F6 100%); color: white; }
-@keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
-@keyframes celebrate { 0% { transform: scale(1); } 50% { transform: scale(1.2) rotate(5deg); } 100% { transform: scale(1); } }
-@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE1 - EDUKIDS 2.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Comic Sans MS', cursive; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 10px; }
+        .header { background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); color: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+        .score { background: #FF6B9D; color: #333; padding: 10px 20px; border-radius: 25px; display: inline-block; font-size: 20px; font-weight: bold; margin-bottom: 15px; border: 3px solid #fff; box-shadow: 0 3px 6px rgba(0,0,0,0.2); }
+        .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .menu-btn { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 30px; border: none; border-radius: 20px; font-size: 18px; cursor: pointer; transition: all 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: center; }
+        .menu-btn:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        .content { background: #FFF9E6; padding: 20px; border-radius: 15px; min-height: 400px; box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+        .quiz-question { background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+        .quiz-option { background: #F0F4F8; margin: 8px 0; padding: 15px; border-radius: 8px; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; font-size: 16px; }
+        .quiz-option:hover { background: #E0E7FF; border-color: #667eea; transform: translateX(5px); }
+        .correct { background: #A8E6CF !important; border-color: #4CAF50 !important; }
+        .incorrect { background: #FFB3B3 !important; border-color: #F44336 !important; }
+        .lesson { background: white; padding: 20px; border-radius: 10px; margin: 15px 0; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+        .btn-primary { background: linear-gradient(135deg, #FF6B9D, #FF6B6B); color: white; padding: 15px 30px; border: none; border-radius: 20px; font-size: 18px; cursor: pointer; margin: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: all 0.3s; }
+        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
+        .badge { display: inline-block; padding: 5px 15px; margin: 5px; background: gold; border-radius: 20px; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .progress-bar { background: #E0E0E0; height: 25px; border-radius: 15px; margin: 20px 0; overflow: hidden; }
+        .progress-fill { background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); height: 100%; transition: width 0.5s; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>🦊 CE1 - Deviens un champion!</h1>
-<p>Programmes Officiels 2025</p>
-<div class="score">⭐ Score: <span id="totalScore">0</span> points</div>
-</div>
-<div class="menu">
-<button class="menu-btn btn-francais" onclick="startQuiz('francais')">📚 Français</button>
-<button class="menu-btn btn-math" onclick="startQuiz('math')">🔢 Maths</button>
-<button class="menu-btn btn-anglais" onclick="startQuiz('anglais')">🌍 Anglais</button>
-</div>
-<div class="content" id="content"></div>
-<script>
-const quizData = {
-francais: [
-{q:"'LE' est un article?", opts:["Masculin","Féminin","Pluriel","Singulier"], correct:0},
-{q:"Quel est le pluriel de 'chat'?", opts:["chat","chats","chates","chatss"], correct:1},
-{q:"'Maman' a combien de syllabes?", opts:["1","2","3","4"], correct:1},
-{q:"Quelle phrase est correcte?", opts:["Il mangent","Il mange","Il manger","Il mangé"], correct:1},
-{q:"'LA' est pour?", opts:["Masculin","Féminin","Pluriel","Neutre"], correct:1},
-{q:"Quel verbe: Je ... à l'école?", opts:["va","vas","vais","vont"], correct:2},
-{q:"Combien de lettres: 'ORDINATEUR'?", opts:["8","9","10","11"], correct:2},
-{q:"'UN' est pour?", opts:["Féminin","Masculin","Pluriel","Tous"], correct:1},
-{q:"'CHIEN' rime avec?", opts:["CHAT","BIEN","RIEN","PAIN"], correct:1},
-{q:"Quel mot est féminin?", opts:["UN CHAT","UNE SOURIS","UN CHIEN","UN POISSON"], correct:1}
-],
-math: [
-{q:"12 + 8 = ?", opts:["18","19","20","21"], correct:2},
-{q:"25 - 10 = ?", opts:["13","14","15","16"], correct:2},
-{q:"3 x 4 = ?", opts:["10","11","12","13"], correct:2},
-{q:"47 = ? dizaines + ? unités", opts:["3+7","4+7","5+7","6+7"], correct:1},
-{q:"Quel nombre est pair?", opts:["13","15","16","17"], correct:2},
-{q:"20 + 20 = ?", opts:["30","40","50","60"], correct:1},
-{q:"50 - 25 = ?", opts:["20","25","30","35"], correct:1},
-{q:"2 x 5 = ?", opts:["8","9","10","11"], correct:2},
-{q:"Quel est le plus grand?", opts:["45","54","34","43"], correct:1},
-{q:"100 - 50 = ?", opts:["40","45","50","55"], correct:2}
-],
-anglais: [
-{q:"'How are you?' signifie?", opts:["Bonjour","Au revoir","Comment vas-tu?","Merci"], correct:2},
-{q:"'Apple' signifie?", opts:["Pomme","Orange","Banane","Raisin"], correct:0},
-{q:"Comment dit-on 'rouge'?", opts:["Blue","Red","Green","Yellow"], correct:1},
-{q:"'Mother' signifie?", opts:["Père","Mère","Frère","Sœur"], correct:1},
-{q:"'I am 7 years old' = ?", opts:["J'ai 6 ans","J'ai 7 ans","J'ai 8 ans","J'ai 9 ans"], correct:1}
-]
-};
-let currentQuiz = [];
-let currentIndex = 0;
-let score = 0;
-let totalScore = parseInt(localStorage.getItem('ce1Score') || '0');
-document.getElementById('totalScore').textContent = totalScore;
-function startQuiz(type) {
-currentQuiz = quizData[type];
-currentIndex = 0;
-score = 0;
-showQuestion();
-}
-function showQuestion() {
-if(currentIndex >= currentQuiz.length) {
-showResult();
-return;
-}
-const q = currentQuiz[currentIndex];
-let html = `<div class="quiz-question">${q.q}</div><div class="quiz-options">`;
-q.opts.forEach((opt, i) => {
-html += `<div class="quiz-option" onclick="checkAnswer(${i})">${opt}</div>`;
-});
-html += `</div>`;
-document.getElementById('content').innerHTML = html;
-}
-function checkAnswer(selected) {
-const q = currentQuiz[currentIndex];
-const opts = document.querySelectorAll('.quiz-option');
-if(selected === q.correct) {
-opts[selected].classList.add('correct');
-playSound('correct');
-score++;
-totalScore += 10;
-} else {
-opts[selected].classList.add('wrong');
-opts[q.correct].classList.add('correct');
-playSound('wrong');
-}
-localStorage.setItem('ce1Score', totalScore);
-document.getElementById('totalScore').textContent = totalScore;
-setTimeout(() => {
-currentIndex++;
-showQuestion();
-}, 1500);
-}
-function showResult() {
-const percent = Math.round((score / currentQuiz.length) * 100);
-let resultClass = percent >= 80 ? 'excellent' : percent >= 50 ? 'good' : 'retry';
-let msg = percent >= 80 ? '🎉 BRAVO! Tu es un génie!' : percent >= 50 ? '👏 Très bien! Encore un effort!' : '💪 Courage, réessaye!';
-let html = `<div class="result ${resultClass}">${msg}<br>Score: ${score}/${currentQuiz.length} (⭐ +${score*10} points)</div>`;
-html += `<button class="back-btn" onclick="location.reload()">← Menu</button>`;
-document.getElementById('content').innerHTML = html;
-if(percent >= 80) playSound('victory');
-}
-function playSound(type) {}
-</script>
+    <div class="header">
+        <h1>🌟 CE1 - EDUKIDS 2.0 🌟</h1>
+        <div class="score">⭐ Score: <span id="score">0</span> points</div>
+        <div class="badge" id="badgeDisplay"></div>
+    </div>
+
+    <div class="menu">
+        <button class="menu-btn" onclick="showSection('maths')">🔢 Maths</button>
+        <button class="menu-btn" onclick="showSection('francais')">📚 Français</button>
+        <button class="menu-btn" onclick="showSection('anglais')">🇬🇧 Anglais</button>
+        <button class="menu-btn" onclick="location.href='index.html'">🏠 Accueil</button>
+    </div>
+
+    <div class="content" id="contentArea">
+        <h2 style="text-align: center; color: #667eea;">Bienvenue en CE1 ! 🎉</h2>
+        <p style="text-align: center; margin-top: 20px; font-size: 18px;">Choisis une matière pour commencer à apprendre et t'amuser ! 🚀</p>
+    </div>
+
+    <script>
+        let score = parseInt(localStorage.getItem('scoreCE1')) || 0;
+        document.getElementById('score').textContent = score;
+
+        const mathsQuestions = [
+            { q: "Combien font 25 + 17 ?", options: ["40", "42", "45", "38"], correct: 1 },
+            { q: "Combien font 8 × 7 ?", options: ["54", "56", "64", "49"], correct: 1 },
+            { q: "Combien font 100 - 35 ?", options: ["65", "70", "75", "60"], correct: 0 },
+            { q: "Quelle est la moitié de 50 ?", options: ["20", "25", "30", "15"], correct: 1 },
+            { q: "Combien font 12 × 3 ?", options: ["36", "32", "30", "34"], correct: 0 }
+        ];
+
+        const francaisQuestions = [
+            { q: "Quel est le pluriel de 'cheval' ?", options: ["chevals", "chevaux", "chevau", "chevales"], correct: 1 },
+            { q: "Comment écrit-on le verbe 'aller' au présent avec 'je' ?", options: ["je alle", "je vais", "je va", "j'alle"], correct: 1 },
+            { q: "Quelle est la nature du mot 'content' ?", options: ["nom", "verbe", "adjectif", "adverbe"], correct: 2 },
+            { q: "Quel mot est bien écrit ?", options: ["famme", "feme", "femme", "fam"], correct: 2 },
+            { q: "Quel est le féminin de 'directeur' ?", options: ["directeuse", "directeure", "directrice", "directerice"], correct: 2 }
+        ];
+
+        const anglaisQuestions = [
+            { q: "Comment dit-on 'chat' en anglais ?", options: ["dog", "cat", "bird", "fish"], correct: 1 },
+            { q: "Que veut dire 'book' ?", options: ["cahier", "stylo", "livre", "gomme"], correct: 2 },
+            { q: "Comment dit-on 'bonjour' ?", options: ["Good morning", "Good night", "Goodbye", "Good evening"], correct: 0 },
+            { q: "Que veut dire 'red' ?", options: ["bleu", "vert", "rouge", "jaune"], correct: 2 },
+            { q: "Comment dit-on 'école' ?", options: ["house", "school", "store", "park"], correct: 1 }
+        ];
+
+        function playSound(type) {
+            const audio = new Audio();
+            if (type === 'correct') {
+                audio.src = 'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZijkIG2i56+2jTwwOUKfj8LZjHAU5k9fzzHo';
+            } else {
+                audio.src = 'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACGhYl/bF1fdJivrJBgNjZjodDbq2IcBj+a2/LDcSYGK4HO8tiKNggZaLvt559NEAxQp+PwtmMcBjiR1/LMeywFJXfH8N2RQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZijkIG2i56+2jTwwOUKfj8LZjHAU5k9fzzHo';
+            }
+            audio.play().catch(() => {});
+        }
+
+        function updateScore(points) {
+            score += points;
+            localStorage.setItem('scoreCE1', score);
+            document.getElementById('score').textContent = score;
+            if (score >= 50) document.getElementById('badgeDisplay').textContent = '🏆 Expert CE1';
+            else if (score >= 30) document.getElementById('badgeDisplay').textContent = '⭐ Champion';
+            else if (score >= 15) document.getElementById('badgeDisplay').textContent = '🌟 Débutant';
+        }
+
+        function showSection(section) {
+            const content = document.getElementById('contentArea');
+            if (section === 'maths') {
+                content.innerHTML = '<div class="lesson"><h2>📐 Leçon de Maths</h2><p>En CE1, nous apprenons les additions et soustractions jusqu\'à 100, ainsi que les tables de multiplication de 2 à 5.</p><p><strong>Exemple :</strong> 7 × 4 = 28</p></div>';
+                content.innerHTML += '<h2 style="text-align:center; margin: 20px 0;">🧮 Quiz de Maths</h2>';
+                showQuiz(mathsQuestions);
+            } else if (section === 'francais') {
+                content.innerHTML = '<div class="lesson"><h2>✍️ Leçon de Français</h2><p>En CE1, nous apprenons les pluriels, la conjugaison au présent et les natures de mots.</p><p><strong>Exemple :</strong> cheval → chevaux (pluriel)</p></div>';
+                content.innerHTML += '<h2 style="text-align:center; margin: 20px 0;">📖 Quiz de Français</h2>';
+                showQuiz(francaisQuestions);
+            } else if (section === 'anglais') {
+                content.innerHTML = '<div class="lesson"><h2>🇬🇧 Leçon d\'Anglais</h2><p>En CE1, nous apprenons les mots simples en anglais : les couleurs, les animaux et les salutations.</p><p><strong>Exemple :</strong> cat = chat</p></div>';
+                content.innerHTML += '<h2 style="text-align:center; margin: 20px 0;">🌍 Quiz d\'Anglais</h2>';
+                showQuiz(anglaisQuestions);
+            }
+        }
+
+        function showQuiz(questions) {
+            const content = document.getElementById('contentArea');
+            questions.forEach((q, index) => {
+                let html = `<div class="quiz-question">
+                    <h3>Question ${index + 1}: ${q.q}</h3>`;
+                q.options.forEach((opt, i) => {
+                    html += `<div class="quiz-option" onclick="checkAnswer(${index}, ${i}, ${q.correct}, this)">${opt}</div>`;
+                });
+                html += `</div>`;
+                content.innerHTML += html;
+            });
+        }
+
+        function checkAnswer(qIndex, selected, correct, element) {
+            const allOptions = element.parentElement.querySelectorAll('.quiz-option');
+            allOptions.forEach(opt => opt.style.pointerEvents = 'none');
+            
+            if (selected === correct) {
+                element.classList.add('correct');
+                playSound('correct');
+                updateScore(2);
+                setTimeout(() => speak('Bravo ! Bonne réponse !'), 100);
+            } else {
+                element.classList.add('incorrect');
+                allOptions[correct].classList.add('correct');
+                playSound('incorrect');
+                setTimeout(() => speak('Essaie encore !'), 100);
+            }
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'fr-FR';
+                utterance.rate = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+    </script>
 </body>
 </html>

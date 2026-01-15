@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE1 - EDUKIDS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 10px; }
+        .header { background: linear-gradient(135deg, #4ECDC4 0%, #44A7A1 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; text-align: center; }
+        .header h1 { font-size: 28px; margin-bottom: 5px; }
+        .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 15px; }
+        .menu-btn { padding: 15px; font-size: 16px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; }
+        .menu-btn:hover { transform: scale(1.05); }
+        .menu-btn-francais { background: #FFD93D; }
+        .menu-btn-math { background: #6BCB77; }
+        .menu-btn-anglais { background: #4D96FF; color: white; }
+        .content { background: white; padding: 15px; border-radius: 8px; min-height: 300px; }
+        .exercise-card { background: #f9f9f9; padding: 12px; margin-bottom: 12px; border-radius: 6px; border-left: 4px solid #4ECDC4; }
+        .exercise-card h3 { margin-bottom: 8px; color: #333; font-size: 16px; }
+        .exercise-card p { margin-bottom: 8px; line-height: 1.4; }
+        .btn-small { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold; background: #6BCB77; color: white; margin-top: 8px; }
+        .back-btn { background: #999; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 15px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🦊 CE1 - Consolidation</h1>
+        <p style="font-size:12px;">Programmes Officiels 2025</p>
+    </div>
+    <div class="menu">
+        <button class="menu-btn menu-btn-francais" onclick="showFrancais()">📖 Français</button>
+        <button class="menu-btn menu-btn-math" onclick="showMath()">🔢 Maths</button>
+        <button class="menu-btn menu-btn-anglais" onclick="showEnglish()">🌍 Anglais</button>
+        <button class="menu-btn menu-btn-francais" onclick="alert('Quiz bientôt!')">❓ Quiz</button>
+    </div>
+    <div class="content">
+        <div id="francais" style="display:none;">
+            <h2 style="font-size:20px; margin-bottom:15px;">📖 Français CE1 - Lecture Fluide</h2>
+            <div class="exercise-card">
+                <h3>📚 Leçon 1: Genre (Masculin/Féminin)</h3>
+                <p><strong>LE</strong> (masculin) chat - <strong>LA</strong> (féminin) souris</p>
+                <button class="btn-small" onclick="alert('Bien!')">✓ Compris!</button>
+            </div>
+            <div class="exercise-card">
+                <h3>📚 Leçon 2: Nombre (Singulier/Pluriel)</h3>
+                <p><strong>1</strong> chat - <strong>Plusieurs</strong> chats (avec S)</p>
+                <button class="btn-small" onclick="alert('Super!')">✓ Compris!</button>
+            </div>
+            <button class="back-btn" onclick="showMenu()">← Retour</button>
+        </div>
+        <div id="math" style="display:none;">
+            <h2 style="font-size:20px; margin-bottom:15px;">🔢 Maths CE1 - Jusqu'à 100</h2>
+            <div class="exercise-card">
+                <h3>🔢 Exercice 1: Dizaines & Unités</h3>
+                <p>34 = <strong>3</strong> dizaines + <strong>4</strong> unités</p>
+                <button class="btn-small" onclick="alert('Exact!')">✓ Bravo!</button>
+            </div>
+            <div class="exercise-card">
+                <h3>➕ Addition</h3>
+                <p>12 + 5 = <strong>17</strong></p>
+                <button class="btn-small" onclick="alert('Correct!')">✓ Bravo!</button>
+            </div>
+            <button class="back-btn" onclick="showMenu()">← Retour</button>
+        </div>
+        <div id="anglais" style="display:none;">
+            <h2 style="font-size:20px; margin-bottom:15px;">🌍 Anglais CE1 - Niveau A1</h2>
+            <div class="exercise-card">
+                <h3>💬 Conversation Simple</h3>
+                <p><strong>Q:</strong> "What's your name?"</p>
+                <p><strong>A:</strong> "I'm Marie"</p>
+                <button class="btn-small" onclick="alert('Excellent!')">✓ Compris!</button>
+            </div>
+            <div class="exercise-card">
+                <h3>🍎 Aliments</h3>
+                <p><strong>Apple</strong> = Pomme, <strong>Bread</strong> = Pain</p>
+                <button class="btn-small" onclick="alert('Super vocabulaire!')">✓ Compris!</button>
+            </div>
+            <button class="back-btn" onclick="showMenu()">← Retour</button>
+        </div>
+        <div id="menu" style="text-align:center; padding-top:30px;">
+            <h2 style="font-size:24px;">Choisis une leçon! 👆</h2>
+        </div>
+    </div>
+    <script>
+        function showFrancais() { hideAll(); document.getElementById('francais').style.display = 'block'; }
+        function showMath() { hideAll(); document.getElementById('math').style.display = 'block'; }
+        function showEnglish() { hideAll(); document.getElementById('anglais').style.display = 'block'; }
+        function showMenu() { hideAll(); document.getElementById('menu').style.display = 'block'; }
+        function hideAll() {
+            document.getElementById('francais').style.display = 'none';
+            document.getElementById('math').style.display = 'none';
+            document.getElementById('anglais').style.display = 'none';
+            document.getElementById('menu').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

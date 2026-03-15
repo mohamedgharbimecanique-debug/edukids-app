@@ -1,0 +1,31 @@
+{
+  "name": "edukids-app",
+  "version": "2.0.0",
+  "description": "Application éducative CP/CE1/CE2 - Programmes officiels 2025",
+  "main": "index.html",
+  "scripts": {
+    "dev": "capacitor serve",
+    "build": "capacitor build android",
+    "start": "capacitor open android"
+  },
+  "keywords": [
+    "éducation",
+    "CP",
+    "CE1",
+    "CE2",
+    "quiz",
+    "apprentissage"
+  ],
+  "author": "Mohamed Gharbi",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "latest",
+    "@capacitor/app": "latest",
+    "@capacitor/haptics": "latest",
+    "@capacitor/keyboard": "latest",
+    "@capacitor/status-bar": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
+}

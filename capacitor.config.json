@@ -1,0 +1,17 @@
+{
+  "appId": "com.mohamedgharbi.edukids",
+  "appName": "EduKids",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUKIDS 2.0 - Apprendre en s'amusant</title>
-    <link rel="manifest" href="manifest.json">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            max-width: 500px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 48px;
-        }
-        p {
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 18px;
-        }
-        .button-group {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .btn {
-            padding: 20px 40px;
-            font-size: 24px;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-        .btn-cp {
-            background: linear-gradient(135deg, #FF6B9D, #FF6B6B);
-            color: white;
-        }
-        .btn-ce1 {
-            background: linear-gradient(135deg, #4ECDC4, #44A08D);
-            color: white;
-        }
-         .btn-ce2 {
- background: linear-gradient(135deg, #FFA500, #FF8C00);
- color: white;
- }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDUKIDS 2.0 - Apprendre en s'amusant</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      max-width: 500px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 48px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+    .button-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .btn-cp {
+      background: linear-gradient(135deg, #FF6B9D, #FF6B6B);
+      color: white;
+    }
+    .btn-ce1 {
+      background: linear-gradient(135deg, #4ECDC4, #44A08D);
+      color: white;
+    }
+    .btn-ce2 {
+      background: linear-gradient(135deg, #FFA500, #FF8C00);
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌟 EDUKIDS 2.0 🌟</h1>
-        <p>Apprendre en s'amusant avec des leçons et des quiz interactifs !</p>
-        <div class="button-group">
-            <a href="cp.html" class="btn btn-cp">📚 CP</a>
-            <a href="ce1.html" class="btn btn-ce1">📖 CE1</a>
-             <a href="ce2.html" class="btn btn-ce2">📖 CE2</a>
-        </div>
+  <div class="container">
+    <h1>🌟 EDUKIDS 2.0 🌟</h1>
+    <p>Apprendre en s'amusant avec des leçons et des quiz interactifs !</p>
+    <div class="button-group">
+      <a href="cp.html" class="btn btn-cp">📚 CP</a>
+      <a href="ce1.html" class="btn btn-ce1">📖 CE1</a>
+      <a href="ce2.html" class="btn btn-ce2">📖 CE2</a>
     </div>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').then(() => {
-                console.log('Service Worker registered!');
-            });
-        }
-    </script>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(() => {
+        console.log('Service Worker registered!');
+      });
+    }
+  </script>
 </body>
 </html>

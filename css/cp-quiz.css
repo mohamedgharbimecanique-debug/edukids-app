@@ -1,0 +1,140 @@
+/* Styles pour le quiz CP */
+.start-quiz-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 20px auto;
+  display: block;
+}
+
+.start-quiz-btn:hover {
+  background: #45a049;
+}
+
+.question-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px 0;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.matiere-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.audio-btn {
+  background: #90a4ae;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.audio-btn:hover {
+  background: #798d91;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  background: #fff3e0;
+  border: 2px solid #ffb74d;
+  color: #e65100;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-btn:hover {
+  background: #ffe0b2;
+  transform: translateY(-2px);
+}
+
+.option-btn.correct {
+  background: #c8e6c9;
+  border-color: #66bb6a;
+  color: #2e7d32;
+}
+
+.option-btn.incorrect {
+  background: #ffcdd2;
+  border-color: #ef5350;
+  color: #c62828;
+}
+
+.retry-btn, .home-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s;
+}
+
+.retry-btn:hover {
+  background: #1e88e5;
+}
+
+.home-btn {
+  background: #757575;
+}
+
+.home-btn:hover {
+  background: #616161;
+}
+
+.result-card {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-message {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.score-pourcentage {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1976d2;
+}

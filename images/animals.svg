@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <!-- Fond dégradé -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Titre -->
+  <text x="500" y="40" font-size="36" font-weight="bold" text-anchor="middle" fill="#333">Les Animaux 🐶🐱🐭</text>
+  
+  <!-- Ours mignon -->
+  <g id="ours">
+    <!-- Corps -->
+    <circle cx="100" cy="200" r="40" fill="#8B4513"/>
+    <!-- Tête -->
+    <circle cx="100" cy="120" r="35" fill="#8B4513"/>
+    <!-- Oreilles -->
+    <circle cx="80" cy="90" r="15" fill="#8B4513"/>
+    <circle cx="120" cy="90" r="15" fill="#8B4513"/>
+    <!-- Yeux -->
+    <circle cx="90" cy="110" r="5" fill="black"/>
+    <circle cx="110" cy="110" r="5" fill="black"/>
+    <!-- Nez -->
+    <circle cx="100" cy="125" r="4" fill="black"/>
+    <!-- Bouche souriante -->
+    <path d="M 100 128 Q 95 135 90 133" stroke="black" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 100 128 Q 105 135 110 133" stroke="black" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <!-- Bras -->
+    <rect x="65" y="180" width="15" height="50" rx="7" fill="#8B4513"/>
+    <rect x="120" y="180" width="15" height="50" rx="7" fill="#8B4513"/>
+    <!-- Jambes -->
+    <rect x="85" y="235" width="15" height="50" rx="7" fill="#8B4513"/>
+    <rect x="100" y="235" width="15" height="50" rx="7" fill="#8B4513"/>
+    <!-- Label -->
+    <text x="100" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">L'Ours</text>
+  </g>
+  
+  <!-- Chat mignon -->
+  <g id="chat">
+    <!-- Tête -->
+    <circle cx="300" cy="140" r="35" fill="#FF9900"/>
+    <!-- Oreilles triangulaires -->
+    <polygon points="280,110 270,80 290,110" fill="#FF9900"/>
+    <polygon points="320,110 330,80 310,110" fill="#FF9900"/>
+    <!-- Intérieur des oreilles -->
+    <polygon points="280,110 273,90 283,110" fill="#FFD700"/>
+    <polygon points="320,110 327,90 317,110" fill="#FFD700"/>
+    <!-- Yeux -->
+    <ellipse cx="285" cy="130" rx="6" ry="10" fill="#00AA00"/>
+    <ellipse cx="315" cy="130" rx="6" ry="10" fill="#00AA00"/>
+    <!-- Pupilles -->
+    <ellipse cx="285" cy="133" rx="3" ry="6" fill="black"/>
+    <ellipse cx="315" cy="133" rx="3" ry="6" fill="black"/>
+    <!-- Nez rose -->
+    <polygon points="300,145 295,155 305,155" fill="#FF69B4"/>
+    <!-- Moustaches -->
+    <line x1="265" y1="145" x2="240" y2="142" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="265" y1="150" x2="240" y2="152" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="335" y1="145" x2="360" y2="142" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="335" y1="150" x2="360" y2="152" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <!-- Corps -->
+    <ellipse cx="300" cy="210" rx="30" ry="40" fill="#FF9900"/>
+    <!-- Queue -->
+    <path d="M 320 240 Q 360 220 350 150" stroke="#FF9900" fill="none" stroke-width="25" stroke-linecap="round"/>
+    <!-- Patte avant gauche -->
+    <rect x="280" y="245" width="10" height="35" rx="5" fill="#FF9900"/>
+    <!-- Patte avant droite -->
+    <rect x="310" y="245" width="10" height="35" rx="5" fill="#FF9900"/>
+    <!-- Label -->
+    <text x="300" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Le Chat</text>
+  </g>
+  
+  <!-- Chien heureux -->
+  <g id="chien">
+    <!-- Corps -->
+    <ellipse cx="520" cy="220" rx="45" ry="50" fill="#CD853F"/>
+    <!-- Tête -->
+    <circle cx="520" cy="130" r="40" fill="#CD853F"/>
+    <!-- Oreilles tombantes -->
+    <ellipse cx="490" cy="100" rx="15" ry="35" fill="#8B4513"/>
+    <ellipse cx="550" cy="100" rx="15" ry="35" fill="#8B4513"/>
+    <!-- Museau -->
+    <ellipse cx="520" cy="155" rx="20" ry="15" fill="#DEB887"/>
+    <!-- Yeux joyeux -->
+    <circle cx="505" cy="115" r="6" fill="black"/>
+    <circle cx="535" cy="115" r="6" fill="black"/>
+    <!-- Sourire amical -->
+    <path d="M 515 160 Q 520 170 525 160" stroke="black" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <!-- Langue sortie -->
+    <ellipse cx="520" cy="175" rx="8" ry="12" fill="#FF69B4"/>
+    <!-- Pattes avant -->
+    <rect x="495" y="260" width="12" height="40" rx="6" fill="#CD853F"/>
+    <rect x="543" y="260" width="12" height="40" rx="6" fill="#CD853F"/>
+    <!-- Pattes arrière -->
+    <rect x="480" y="265" width="12" height="35" rx="6" fill="#8B4513"/>
+    <rect x="558" y="265" width="12" height="35" rx="6" fill="#8B4513"/>
+    <!-- Queue remuante -->
+    <path d="M 560 210 Q 600 200 590 160" stroke="#CD853F" fill="none" stroke-width="20" stroke-linecap="round"/>
+    <!-- Label -->
+    <text x="520" y="330" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Le Chien</text>
+  </g>
+  
+  <!-- Lapin adorable -->
+  <g id="lapin">
+    <!-- Corps -->
+    <ellipse cx="750" cy="220" rx="40" ry="50" fill="#FFB6C1"/>
+    <!-- Tête -->
+    <circle cx="750" cy="130" r="35" fill="#FFB6C1"/>
+    <!-- Longues oreilles -->
+    <ellipse cx="730" cy="60" rx="12" ry="50" fill="#FFB6C1"/>
+    <ellipse cx="770" cy="60" rx="12" ry="50" fill="#FFB6C1"/>
+    <!-- Intérieur des oreilles -->
+    <ellipse cx="730" cy="70" rx="6" ry="35" fill="#FF69B4"/>
+    <ellipse cx="770" cy="70" rx="6" ry="35" fill="#FF69B4"/>
+    <!-- Yeux grands et doux -->
+    <circle cx="735" cy="120" r="7" fill="black"/>
+    <circle cx="765" cy="120" r="7" fill="black"/>
+    <!-- Lueur dans les yeux -->
+    <circle cx="736" cy="118" r="2" fill="white"/>
+    <circle cx="766" cy="118" r="2" fill="white"/>
+    <!-- Petit nez -->
+    <circle cx="750" cy="135" r="4" fill="#FF1493"/>
+    <!-- Bouche en forme de Y -->
+    <path d="M 750 138 Q 745 145 740 150" stroke="black" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 750 138 Q 755 145 760 150" stroke="black" fill="none" stroke-width="2" stroke-linecap="round"/>
+    <!-- Pattes avant -->
+    <rect x="730" y="265" width="10" height="40" rx="5" fill="#FFB6C1"/>
+    <rect x="760" y="265" width="10" height="40" rx="5" fill="#FFB6C1"/>
+    <!-- Queue boule blanche -->
+    <circle cx="750" cy="270" r="18" fill="white"/>
+    <!-- Label -->
+    <text x="750" y="330" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Le Lapin</text>
+  </g>
+  
+  <!-- Petit message encourageant -->
+  <text x="500" y="550" font-size="18" text-anchor="middle" fill="#666">Appuie sur chaque animal pour écouter son bruit ! 🎵</text>
+</svg>

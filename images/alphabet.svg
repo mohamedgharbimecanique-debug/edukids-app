@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#e8f4f8"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-size="48" font-weight="bold" text-anchor="middle" fill="#333">L'Alphabet</text>
+  <text x="400" y="100" font-size="24" text-anchor="middle" fill="#666">Les 26 lettres en français</text>
+  
+  <!-- Letter boxes -->
+  <g id="letterBox">
+    <!-- A -->
+    <rect x="20" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="45" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">A</text>
+    
+    <!-- B -->
+    <rect x="80" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="105" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">B</text>
+    
+    <!-- C -->
+    <rect x="140" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="165" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">C</text>
+    
+    <!-- D -->
+    <rect x="200" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="225" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">D</text>
+    
+    <!-- E -->
+    <rect x="260" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="285" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">E</text>
+    
+    <!-- F -->
+    <rect x="320" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="345" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">F</text>
+    
+    <!-- G -->
+    <rect x="380" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="405" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">G</text>
+    
+    <!-- H -->
+    <rect x="440" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="465" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">H</text>
+    
+    <!-- I -->
+    <rect x="500" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="525" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">I</text>
+    
+    <!-- J -->
+    <rect x="560" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="585" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">J</text>
+    
+    <!-- K -->
+    <rect x="620" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="645" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">K</text>
+    
+    <!-- L -->
+    <rect x="680" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="705" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">L</text>
+    
+    <!-- M -->
+    <rect x="740" y="130" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="765" y="170" font-size="36" font-weight="bold" text-anchor="middle" fill="white">M</text>
+  </g>
+  
+  <!-- Second row -->
+  <g id="letterBox2">
+    <!-- N to Z -->
+    <rect x="20" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="45" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">N</text>
+    
+    <rect x="80" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="105" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">O</text>
+    
+    <rect x="140" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="165" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">P</text>
+    
+    <rect x="200" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="225" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">Q</text>
+    
+    <rect x="260" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="285" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">R</text>
+    
+    <rect x="320" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="345" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">S</text>
+    
+    <rect x="380" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="405" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">T</text>
+    
+    <rect x="440" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="465" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">U</text>
+    
+    <rect x="500" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="525" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">V</text>
+    
+    <rect x="560" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="585" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">W</text>
+    
+    <rect x="620" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="645" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">X</text>
+    
+    <rect x="680" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="705" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">Y</text>
+    
+    <rect x="740" y="200" width="50" height="50" fill="#4ECDC4" rx="5"/>
+    <text x="765" y="240" font-size="36" font-weight="bold" text-anchor="middle" fill="white">Z</text>
+  </g>
+  
+  <!-- Helpful text -->
+  <text x="400" y="320" font-size="18" text-anchor="middle" fill="#333">Mémorise les lettres de A à Z!</text>
+</svg>

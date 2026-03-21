@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#fff8f0"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-size="48" font-weight="bold" text-anchor="middle" fill="#333">Les Chiffres 0-10</text>
+  <text x="400" y="100" font-size="24" text-anchor="middle" fill="#666">Apprendre à compter</text>
+  
+  <!-- Number 0 -->
+  <g>
+    <circle cx="80" cy="180" r="30" fill="#FF6B9D"/>
+    <text x="80" y="195" font-size="40" font-weight="bold" text-anchor="middle" fill="white">0</text>
+  </g>
+  
+  <!-- Number 1 with 1 dot -->
+  <g>
+    <rect x="120" y="150" width="60" height="60" fill="#4ECDC4" rx="5"/>
+    <circle cx="150" cy="180" r="8" fill="#FF6B9D"/>
+    <text x="150" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">1</text>
+  </g>
+  
+  <!-- Number 2 with 2 dots -->
+  <g>
+    <rect x="200" y="150" width="60" height="60" fill="#4ECDC4" rx="5"/>
+    <circle cx="215" cy="165" r="8" fill="#FF6B9D"/>
+    <circle cx="235" cy="185" r="8" fill="#FF6B9D"/>
+    <text x="230" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">2</text>
+  </g>
+  
+  <!-- Number 3 with 3 dots -->
+  <g>
+    <rect x="280" y="150" width="60" height="60" fill="#4ECDC4" rx="5"/>
+    <circle cx="295" cy="155" r="8" fill="#FF6B9D"/>
+    <circle cx="310" cy="175" r="8" fill="#FF6B9D"/>
+    <circle cx="325" cy="195" r="8" fill="#FF6B9D"/>
+    <text x="310" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">3</text>
+  </g>
+  
+  <!-- Number 4 with 4 dots -->
+  <g>
+    <rect x="360" y="150" width="60" height="60" fill="#4ECDC4" rx="5"/>
+    <circle cx="375" cy="160" r="8" fill="#FF6B9D"/>
+    <circle cx="395" cy="160" r="8" fill="#FF6B9D"/>
+    <circle cx="375" cy="190" r="8" fill="#FF6B9D"/>
+    <circle cx="395" cy="190" r="8" fill="#FF6B9D"/>
+    <text x="390" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">4</text>
+  </g>
+  
+  <!-- Number 5 with 5 dots -->
+  <g>
+    <rect x="440" y="150" width="60" height="60" fill="#4ECDC4" rx="5"/>
+    <circle cx="455" cy="160" r="8" fill="#FF6B9D"/>
+    <circle cx="475" cy="160" r="8" fill="#FF6B9D"/>
+    <circle cx="465" cy="180" r="8" fill="#FF6B9D"/>
+    <circle cx="455" cy="200" r="8" fill="#FF6B9D"/>
+    <circle cx="475" cy="200" r="8" fill="#FF6B9D"/>
+    <text x="470" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">5</text>
+  </g>
+  
+  <!-- Number 6 with 6 dots -->
+  <g>
+    <rect x="520" y="150" width="60" height="60" fill="#FFA500" rx="5"/>
+    <circle cx="535" cy="160" r="8" fill="white"/>
+    <circle cx="555" cy="160" r="8" fill="white"/>
+    <circle cx="535" cy="180" r="8" fill="white"/>
+    <circle cx="555" cy="180" r="8" fill="white"/>
+    <circle cx="535" cy="200" r="8" fill="white"/>
+    <circle cx="555" cy="200" r="8" fill="white"/>
+    <text x="550" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">6</text>
+  </g>
+  
+  <!-- Number 7 -->
+  <g>
+    <rect x="600" y="150" width="60" height="60" fill="#FFA500" rx="5"/>
+    <text x="630" y="195" font-size="40" font-weight="bold" text-anchor="middle" fill="white">7</text>
+    <text x="630" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">7</text>
+  </g>
+  
+  <!-- Number 8 -->
+  <g>
+    <rect x="680" y="150" width="60" height="60" fill="#FFA500" rx="5"/>
+    <text x="710" y="195" font-size="40" font-weight="bold" text-anchor="middle" fill="white">8</text>
+    <text x="710" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">8</text>
+  </g>
+  
+  <!-- Number 9 -->
+  <g>
+    <rect x="720" y="150" width="60" height="60" fill="#FFA500" rx="5"/>
+    <text x="750" y="195" font-size="40" font-weight="bold" text-anchor="middle" fill="white">9</text>
+    <text x="750" y="235" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">9</text>
+  </g>
+  
+  <!-- Number 10 -->
+  <g>
+    <rect x="240" y="320" width="80" height="60" fill="#FF6B9D" rx="5"/>
+    <text x="280" y="365" font-size="40" font-weight="bold" text-anchor="middle" fill="white">10</text>
+    <text x="280" y="410" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Dix</text>
+  </g>
+  
+  <!-- Encouragement -->
+  <text x="400" y="520" font-size="20" text-anchor="middle" fill="#666">Compte et apprends les nombres!</text>
+</svg>

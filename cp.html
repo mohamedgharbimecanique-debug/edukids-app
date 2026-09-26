@@ -3,47 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduKids — Niveau CP</title>
+<title>EduKids — CP</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#fff7ed;color:#17202a}header{padding:24px 18px;background:#ef4444;color:#fff;text-align:center}header h1{margin:0 0 8px}.home{display:inline-block;margin-top:15px;padding:10px 16px;border-radius:999px;background:#fff;color:#b91c1c;text-decoration:none;font-weight:bold}.container{max-width:900px;margin:auto;padding:28px 18px}.card{background:#fff;border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 5px 20px #17202a18}.syllables{display:flex;flex-wrap:wrap;gap:12px}.syllable{border:0;border-radius:12px;padding:15px 18px;background:#fee2e2;color:#991b1b;font-size:1.15rem;font-weight:bold;cursor:pointer}.syllable:active{transform:scale(.97)}.hint{color:#64748b;line-height:1.6}.status{min-height:24px;color:#b91c1c;font-weight:bold}footer{text-align:center;padding:25px;color:#64748b}
+body{margin:0;font-family:Arial,sans-serif;background:#6b70d8;color:#17202a}.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fff;box-shadow:0 2px 10px #0003}.home{display:inline-block;padding:10px 15px;border-radius:999px;background:#1d4ed8;color:#fff;text-decoration:none;font-weight:bold}.title{font-weight:bold;color:#1d4ed8}.page{max-width:760px;margin:auto;padding:18px 10px 35px}.hero{padding:25px 18px;border-radius:0 0 22px 22px;background:linear-gradient(135deg,#ff8a94,#ffb4a2);text-align:center;color:#fff}.points{display:inline-block;margin:10px;padding:10px 24px;border-radius:30px;background:#ffc21c;color:#503800;font-size:20px}.menu{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.menu button{flex:1;min-width:130px;padding:18px;border:0;border-radius:18px;color:#fff;font-size:18px;font-weight:bold;cursor:pointer}.lessons{background:#ffc21c}.quiz{background:#4caf50}.memory{background:#168be0}.card{background:#fff;border-radius:20px;padding:22px;margin:16px 0;box-shadow:0 5px 18px #0002}.card h2{color:#e85b77}.syllables{display:flex;flex-wrap:wrap;gap:9px}.syllable{padding:13px 15px;border:0;border-radius:12px;background:#e8f0ff;color:#174ea6;font-weight:bold;font-size:18px}.listen{margin-top:12px;padding:12px 16px;border:0;border-radius:22px;background:#35ac58;color:#fff;font-weight:bold;font-size:16px}.status{min-height:24px;color:#b91c1c;font-weight:bold}.hint{color:#667085;line-height:1.6}
 </style>
 </head>
 <body>
-<header>
-<h1>EduKids — Niveau CP</h1>
-<p>Les syllabes : écoute, répète et progresse.</p>
-<a class="home" href="index.html">⌂ Accueil</a>
-</header>
-<main class="container">
-<section class="card">
-<h2>Écoute les syllabes</h2>
-<p class="hint">Appuie sur une syllabe pour l’entendre en français.</p>
-<div class="syllables" aria-label="Syllabes à écouter">
-<button class="syllable" data-speak="ma">MA</button><button class="syllable" data-speak="me">ME</button><button class="syllable" data-speak="mi">MI</button><button class="syllable" data-speak="mo">MO</button><button class="syllable" data-speak="mu">MU</button>
-<button class="syllable" data-speak="la">LA</button><button class="syllable" data-speak="le">LE</button><button class="syllable" data-speak="li">LI</button><button class="syllable" data-speak="lo">LO</button><button class="syllable" data-speak="lu">LU</button>
-<button class="syllable" data-speak="pa">PA</button><button class="syllable" data-speak="pe">PE</button><button class="syllable" data-speak="pi">PI</button><button class="syllable" data-speak="po">PO</button><button class="syllable" data-speak="pu">PU</button>
-<button class="syllable" data-speak="sa">SA</button><button class="syllable" data-speak="se">SE</button><button class="syllable" data-speak="si">SI</button><button class="syllable" data-speak="so">SO</button><button class="syllable" data-speak="su">SU</button>
-</div>
-<p class="status" id="status" aria-live="polite"></p>
-</section>
-<section class="card"><h2>Conseil</h2><p class="hint">Écoute une syllabe, répète-la à voix haute, puis essaie de former un mot avec elle.</p></section>
+<nav class="topbar"><a class="home" href="index.html">⌂ Accueil</a><span class="title">EduKids · CP</span></nav>
+<header class="hero"><div class="points">50 pts</div><h1>Niveau CP</h1><p>Apprends en t’amusant !</p></header>
+<main class="page">
+<div class="menu"><button class="lessons" type="button" onclick="document.getElementById('lecons').scrollIntoView()">📚 Leçons</button><button class="quiz" type="button" onclick="document.getElementById('syllabes').scrollIntoView()">❓ Quiz</button><button class="memory" type="button" onclick="document.getElementById('syllabes').scrollIntoView()">🎮 Memory</button></div>
+<section id="lecons" class="card"><h2>📚 Leçons CP</h2><article><h3>🔤 Leçon 1 : Les voyelles</h3><p>A — E — I — O — U — Y</p><p class="hint">Exemples : Ananas, Éléphant, Igloo, Orange, Usine.</p><button class="listen" data-speak="Les voyelles : A, E, I, O, U, Y">🔊 Écouter les voyelles</button></article></section>
+<section id="syllabes" class="card"><h2>🔤 Leçon 2 : Les syllabes</h2><p class="hint">Écoute chaque syllabe avec un mot exemple pour entendre une prononciation claire.</p><div class="syllables"><button class="syllable" data-speak="BA comme bateau">BA</button><button class="syllable" data-speak="BE comme bébé">BE</button><button class="syllable" data-speak="BI comme bicyclette">BI</button><button class="syllable" data-speak="BO comme ballon">BO</button><button class="syllable" data-speak="BU comme bureau">BU</button><button class="syllable" data-speak="PA comme papa">PA</button><button class="syllable" data-speak="PE comme petit">PE</button><button class="syllable" data-speak="PI comme pirate">PI</button><button class="syllable" data-speak="PO comme pomme">PO</button><button class="syllable" data-speak="PU comme pull">PU</button><button class="syllable" data-speak="MA comme maman">MA</button><button class="syllable" data-speak="ME comme melon">ME</button><button class="syllable" data-speak="MI comme minute">MI</button><button class="syllable" data-speak="MO comme moto">MO</button><button class="syllable" data-speak="MU comme musique">MU</button></div><p class="status" id="status" aria-live="polite"></p></section>
 </main>
-<footer>EduKids — Apprendre en s’amusant</footer>
-<script>
-const status=document.getElementById('status');
-const syllableSpeech={ma:'ma',me:'meu',mi:'mi',mo:'mo',mu:'mu',la:'la',le:'leu',li:'li',lo:'lo',lu:'lu',pa:'pa',pe:'peu',pi:'pi',po:'po',pu:'pu',sa:'sa',se:'seu',si:'si',so:'so',su:'su'};
-function parler(texte){
-  if(!window.speechSynthesis){status.textContent='La lecture audio n’est pas disponible sur cet appareil.';return}
-  window.speechSynthesis.cancel();
-  const utterance=new SpeechSynthesisUtterance(syllableSpeech[texte]||texte);
-  utterance.lang='fr-FR'; utterance.rate=.65; utterance.pitch=1;
-  const voix=window.speechSynthesis.getVoices().find(v=>v.lang.toLowerCase().startsWith('fr'));
-  if(voix) utterance.voice=voix;
-  status.textContent='Écoute : '+texte.toUpperCase();
-  utterance.onend=()=>status.textContent='';
-  window.speechSynthesis.speak(utterance);
-}
-document.querySelectorAll('[data-speak]').forEach(button=>button.addEventListener('click',()=>parler(button.dataset.speak)));
-</script>
+<script>const status=document.getElementById('status');function parler(texte){if(!window.speechSynthesis){status.textContent='Audio indisponible sur cet appareil.';return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(texte);u.lang='fr-FR';u.rate=.72;u.pitch=1;const v=speechSynthesis.getVoices().find(x=>x.lang&&x.lang.toLowerCase().startsWith('fr'));if(v)u.voice=v;status.textContent='Écoute : '+texte;u.onend=()=>status.textContent='';speechSynthesis.speak(u)}document.querySelectorAll('[data-speak]').forEach(b=>b.addEventListener('click',()=>parler(b.dataset.speak)));</script>
 </body>
 </html>
